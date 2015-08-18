@@ -114,7 +114,11 @@ button a {
   padding-top: 30%;
   top: 0;
   width: 100%;
-  background: rgba(250, 245, 239, 0.5);
+  background: rgba(250, 245, 239, 0.6);
+}
+
+.overlay:hover {
+  background: rgba(250, 245, 239, 0.4);
 }
 
 .one p {

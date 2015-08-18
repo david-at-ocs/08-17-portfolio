@@ -1,0 +1,160 @@
+/*-----------------------------------------------------------------------------------
+border-box formatting so padding/margin doesn't effect percentage widths
+-----------------------------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                general styling
+-----------------------------------------------------------------------------------*/
+
+body {
+  background-color: #424242;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+/*-----------------------------------------------------------------------------------
+                  utilities
+-----------------------------------------------------------------------------------*/
+
+.hide {
+  display: none;
+}
+
+/*.container {
+  padding: 15px;
+}*/
+  
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                  header
+-----------------------------------------------------------------------------------*/
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  background: rgba(200, 200, 200, 0.5);
+  border-bottom: black 1px solid;
+  z-index: 999;
+}
+
+.header__navigation {
+  position: absolute;
+  display: none;
+}
+
+.header__navigation.show {
+  display: block;
+}
+
+.hamburger {
+  width: 30px;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                  button styling
+-----------------------------------------------------------------------------------*/
+
+button {
+  border: 1px solid white;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+  text-transform: lowercase;
+  font-size: 15px;
+}
+
+button a {
+  display: block;
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+
+/*-----------------------------------------------------------------------------------
+                 body
+-----------------------------------------------------------------------------------*/
+
+
+.square {
+  position: relative;
+}
+
+.square img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  text-align: center;
+  padding-top: 30%;
+  top: 0;
+  width: 100%;
+  background: rgba(250, 245, 239, 0.5);
+}
+
+.one p {
+}
+
+.one .overlay {
+  top: 0px;
+  height: 100%;
+}
+
+.two {
+  top: -4px;
+}
+
+.two .overlay {
+  top: 0px;
+  height: 99%;
+}
+
+.three{
+  top: -8px;
+}
+
+.three .overlay {
+  top: 0px;
+  height: 99%;
+}
+
+
+
+/*-----------------------------------------------------------------------------------
+                  footer
+-----------------------------------------------------------------------------------*/
+
+footer {
+  position: relative;
+  color: white;
+}
+
+.footer-container {
+  position: absolute;
+  top: -3px;
+}
